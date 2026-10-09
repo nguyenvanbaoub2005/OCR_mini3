@@ -631,36 +631,38 @@ class _ReceiptReviewScreenState extends State<ReceiptReviewScreen> {
               ),
               child: Row(
                 children: [
-                  // Nút Hủy
-                  Expanded(
-                    flex: 2,
-                    child: OutlinedButton(
-                      onPressed: _isSaving ? null : () => Navigator.pop(context),
-                      style: OutlinedButton.styleFrom(
-                        padding: const EdgeInsets.symmetric(vertical: 14),
-                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-                      ),
-                      child: const Text('Hủy'),
-                    ),
-                  ),
-                  const SizedBox(width: 14),
-
-                  // Nút Lưu hóa đơn
+                  // Nút Lưu hóa đơn (Đã chuyển sang trái)
                   Expanded(
                     flex: 3,
                     child: ElevatedButton.icon(
                       onPressed: _isSaving ? null : _handleSaveReceipt,
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: AppColors.primary,
+                        backgroundColor: AppColors.accent, // Đổi sang màu vàng (Accent)
                         foregroundColor: Colors.white,
                         padding: const EdgeInsets.symmetric(vertical: 14),
-                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
                       ),
                       icon: const Icon(Icons.save_rounded, size: 20),
                       label: Text(
                         widget.existingReceipt != null ? 'Lưu thay đổi' : 'Lưu hóa đơn',
                         style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 15),
                       ),
+                    ),
+                  ),
+                  const SizedBox(width: 14),
+
+                  // Nút Hủy (Đã chuyển sang phải)
+                  Expanded(
+                    flex: 2,
+                    child: OutlinedButton(
+                      onPressed: _isSaving ? null : () => Navigator.pop(context),
+                      style: OutlinedButton.styleFrom(
+                        foregroundColor: AppColors.textSecondary,
+                        side: const BorderSide(color: AppColors.border),
+                        padding: const EdgeInsets.symmetric(vertical: 14),
+                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
+                      ),
+                      child: const Text('Hủy'),
                     ),
                   ),
                 ],
