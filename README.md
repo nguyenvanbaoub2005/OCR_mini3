@@ -142,8 +142,8 @@ lib/
 
 1. **Clone repository**:
    ```bash
-   git clone https://github.com/kiet293/OCR_Expense.git
-   cd OCR_Expense
+   git clone https://github.com/nguyenvanbaoub2005/OCR_mini3.git
+   cd OCR_mini3
    ```
 
 2. **Cài đặt các thư viện phụ thuộc**:
@@ -192,4 +192,4 @@ Dự án bao gồm bộ Unit Test hoàn chỉnh bao phủ toàn bộ các tầng
 ## 👨‍💻 Tác giả & Đồ án
 - **Ứng dụng**: BillLens – Smart Receipt & Expense Tracker
 - **Ngôn ngữ & Nền tảng**: Dart & Flutter
-- **Repository**: [https://github.com/kiet293/OCR_Expense](https://github.com/kiet293/OCR_Expense)
+- **Repository**: [https://github.com/nguyenvanbaoub2005/OCR_mini3](https://github.com/nguyenvanbaoub2005/OCR_mini3)

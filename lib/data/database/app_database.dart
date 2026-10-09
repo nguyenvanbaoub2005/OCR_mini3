@@ -3,7 +3,7 @@ import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
 import '../models/receipt_model.dart';
 
-/// Lớp quản lý kết nối và khởi tạo cơ sở dữ liệu cục bộ SQLite (AppDatabase)
+/// Lớp quản lý kết nối và khởi tạo cơ sở dữ liệu cục bộ SQLite (AppDatabase) - Đã cập nhật tuần này
 /// Đảm bảo tính offline 100%, an toàn và khởi tạo bảng `receipts`.
 class AppDatabase {
   AppDatabase._internal();

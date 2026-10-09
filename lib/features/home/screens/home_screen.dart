@@ -9,7 +9,7 @@ import '../widgets/quick_stat_card.dart';
 import '../widgets/recent_receipt_item.dart';
 import '../widgets/scan_action_banner.dart';
 
-/// Màn hình Trang chủ (Dashboard) chính của BillLens
+/// Màn hình Trang chủ (Dashboard) chính của BillLens - Cập nhật UI mới
 /// Kết nối động với SQLite qua ReceiptController
 class HomeScreen extends StatelessWidget {
   final VoidCallback? onNavigateToScan;
