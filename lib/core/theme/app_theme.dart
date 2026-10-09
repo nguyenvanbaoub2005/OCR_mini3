@@ -39,12 +39,12 @@ class AppTheme {
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
-          backgroundColor: AppColors.primary,
+          backgroundColor: AppColors.secondary, // Đổi màu nút mặc định thành Rose
           foregroundColor: Colors.white,
-          elevation: 0,
+          elevation: 2,
           padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 14),
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(12),
+            borderRadius: BorderRadius.circular(30), // Bo tròn dạng viên thuốc (pill shape)
           ),
           textStyle: const TextStyle(
             fontSize: 16,
