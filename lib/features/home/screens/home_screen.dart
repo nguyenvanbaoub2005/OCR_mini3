@@ -121,7 +121,7 @@ class HomeScreen extends StatelessWidget {
                           const SizedBox(width: 12),
                           const Expanded(
                             child: Text(
-                              'LƯU Ý (BẢN WEB): Tính năng nhận diện chữ (OCR) và cơ sở dữ liệu (SQLite) không được hỗ trợ trên trình duyệt. Phiên bản này chỉ dành để xem trước giao diện. Vui lòng chạy app trên điện thoại (Android/iOS) để test đầy đủ.',
+                              'LƯU Ý (BẢN WEB): Bạn có thể test tính năng quét bằng cách up ảnh lên, nhưng sẽ KHÔNG THỂ lưu dữ liệu hóa đơn (do cơ sở dữ liệu SQLite chỉ hỗ trợ chạy trên phần cứng điện thoại Android/iOS).',
                               style: TextStyle(
                                 fontSize: 12.5,
                                 color: Colors.black87,
