@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart'; // Added for kIsWeb
 import '../../../core/constants/app_colors.dart';
 import '../../../core/constants/app_constants.dart';
 import '../../../core/services/receipt_controller.dart';
@@ -102,6 +103,35 @@ class HomeScreen extends StatelessWidget {
                     ],
                   ),
                   const SizedBox(height: 24),
+
+                  // Banner cảnh báo riêng cho bản Web
+                  if (kIsWeb)
+                    Container(
+                      margin: const EdgeInsets.only(bottom: 24),
+                      padding: const EdgeInsets.all(14),
+                      decoration: BoxDecoration(
+                        color: Colors.orange.shade50,
+                        border: Border.all(color: Colors.orange.shade300),
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Icon(Icons.warning_amber_rounded, color: Colors.orange.shade800, size: 24),
+                          const SizedBox(width: 12),
+                          const Expanded(
+                            child: Text(
+                              'LƯU Ý (BẢN WEB): Tính năng nhận diện chữ (OCR) và cơ sở dữ liệu (SQLite) không được hỗ trợ trên trình duyệt. Phiên bản này chỉ dành để xem trước giao diện. Vui lòng chạy app trên điện thoại (Android/iOS) để test đầy đủ.',
+                              style: TextStyle(
+                                fontSize: 12.5,
+                                color: Colors.black87,
+                                height: 1.4,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
 
                   // Thẻ số liệu thống kê nhanh (Quick Stats từ SQLite)
                   Row(
